@@ -46,8 +46,8 @@ nav > a:hover {
 @media(min-width:320px) and (max-width:500px) {
     #logo {
         margin: 10px;
-        width: 100px;  
-        height: 100px; 
+        width: 90px;  
+        height: 90px; 
     }
     header {
         height: 120px;
