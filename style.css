@@ -6,9 +6,9 @@
 }
 
 body {
+    overflow-x: hidden;
     margin: 0;
     background-color: #D9D9D9;
-    background-attachment: fixed;
 }
 
 header {
