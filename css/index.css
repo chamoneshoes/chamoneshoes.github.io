@@ -55,13 +55,13 @@ nav > a:hover {
     border-radius: 15%;
     box-shadow: 4px 4px 3px #7c7c7c;
     padding: 7px;
-    width: 380px;
+    width: 365px;
     background-color: #202d52;
     margin: auto;
 }
 
 .nome_marca {
-    font-size: 1.6em;
+    font-size: 1.4em;
     color: white;
 }
 
