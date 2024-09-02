@@ -1,0 +1,131 @@
+/*fonte*/
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+* {
+    font-family: Squada One;
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+    background-color: #D9D9D9;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-image: linear-gradient(to bottom, #203b52, #D9D9D9);
+}
+
+nav {
+    justify-content: center;
+    width: 100%;
+    display: flex;
+}
+
+nav > a {
+    margin: 0px 10px;
+    color: #ffffff;
+    border-radius: 10%;
+    align-self: center;
+    text-decoration: none;
+    text-shadow:2px 1px 3px #96ccf8;
+    white-space: nowrap;
+}
+
+nav > a:hover {
+    transition: 0.3s;
+    scale: 1.1;
+    color:rgb(162, 241, 255);
+    text-decoration: underline;
+}
+
+#titulo {
+    color: #013880;
+    font-family: Orbitron, sans-serif;
+    text-align: center;
+}
+
+/*media*/
+
+/*Celular*/
+@media(min-width:320px) and (max-width:500px) {
+    #logo {
+        margin: 10px;
+        width: 90px;  
+        height: 90px; 
+    }
+    header {
+        height: 120px;
+    }
+    a {
+        padding: 5px;
+        font-size: 1.3em;
+    }
+    #titulo {
+        font-size: 2.0em;
+        text-shadow: 2px 1px 2px #2dc4ff;
+    }
+}
+
+/*Tablet*/
+@media(min-width:501px) and (max-width:767px) {
+    #logo {
+        margin: 10px 0px 0px 15px;
+        width: 120px;  
+        height: 120px; 
+    }
+    header {
+        height: 130px;
+    }
+    a {
+        padding: 20px;
+        font-size: 2em;
+    }
+    #titulo {
+        font-size: 2.5em;
+        text-shadow: 3px 2px 2px #2dc4ff;
+    }
+}
+
+/*Desktop menor*/
+@media(min-width:767px) and (max-width:1440px) {
+    #logo {
+        margin: 10px 0px 0px 20px;
+        width: 140px;  
+        height: 140px; 
+    }
+    header {
+        height: 120px;
+    }
+    a {
+        padding: 30px;
+        font-size: 3em;
+    }
+    #titulo {
+        font-size: 3.2em;
+        text-shadow: 4px 3px 2px #2dc4ff;
+    }
+}
+
+
+/*Desktop maior*/
+@media(min-width:1441px){
+    #logo {
+        margin: 10px 0px 0px 20px;
+        width: 160px;  
+        height: 160px; 
+    }
+    header {
+        height: 160px;
+    }
+    a {
+        padding: 60px;
+        font-size: 4.2em;
+    }
+    #titulo {
+        font-size: 3.5em;
+        text-shadow: 4px 3px 2px #2dc4ff;
+    }
+}
