@@ -54,14 +54,14 @@ nav > a:hover {
 #divisao_marcas {
     border-radius: 15%;
     box-shadow: 4px 4px 3px #7c7c7c;
-    padding: 10px;
-    width: 415px;
+    padding: 7px;
+    width: 380px;
     background-color: #202d52;
     margin: auto;
 }
 
 .nome_marca {
-    font-size: 1.7em;
+    font-size: 1.6em;
     color: white;
 }
 
@@ -82,7 +82,7 @@ nav > a:hover {
 }
 
 p#selecione {
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #00b7ff;
     text-align: center;
 }
