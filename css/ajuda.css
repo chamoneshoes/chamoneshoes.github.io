@@ -1,6 +1,5 @@
 /*fonte*/
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Squada+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 * {
     font-family: Squada One;
@@ -43,7 +42,7 @@ nav > a:hover {
 
 #titulo {
     color: #013880;
-    font-family: Orbitron, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
