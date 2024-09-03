@@ -47,8 +47,6 @@ nav > a:hover {
     text-align: center;
 }
 
-/*media*/
-
 /*marcas*/
 
 #divisao_marcas {
@@ -202,7 +200,7 @@ footer {
         height: 140px; 
     }
     header {
-        height: 120px;
+        height: 150px;
     }
     nav > a {
         padding: 30px;
@@ -253,7 +251,7 @@ footer {
         height: 160px; 
     }
     header {
-        height: 160px;
+        height: 180px;
     }
     nav > a {
         padding: 60px;
