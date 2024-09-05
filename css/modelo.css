@@ -27,6 +27,106 @@ header {
     margin: 5px 0px 5px 15px;
 }
 
+/*config do produto*/
+
+.imagem_produto {
+    display: block;
+    width: 280px;
+    align-self: center;
+    border-radius: 10% 10% 0% 0%;
+}
+
+section.produto {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px 50px 0px;
+}
+
+article.info_produto {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 85px;
+    width: 280px;
+    background-color: #203b52;
+    border-radius: 0% 0% 50% 50%;
+}
+
+h1.modelo {
+    text-shadow: 3px 2px 1px #142635;
+    font-size: 1.7em;
+    margin-top: 7px;
+    margin-bottom: 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+div.preco_link {
+    display: flex;
+    justify-content: space-around;
+}
+
+.preco, .ver_mais {
+    margin: 4px 0px 0px 0px;
+}
+
+.preco {
+    font-family: monospace;
+    font-size: 1.5em;
+    color: rgb(6, 180, 0);
+}
+
+.ver_mais {
+    font-size: 1.4em;
+    color: #e2a164;
+    align-self: center;
+}
+
+.ver_mais:hover {
+    transition: 0.3s;
+    color: #ff922d;
+    scale: 1.1;
+}
+
+/*clicou no ver mais*/
+
+.clicou_vermais {
+    display: none;
+    background-color: #203b52;
+    width: 280px; 
+    height: auto;
+    margin: auto;
+}
+
+.tamanhos {
+    text-align: center;
+    color: aliceblue;
+}
+
+.modelos_dunk_low {
+    margin: 5px 5px 5px 5px;
+    width: 70px;
+    border-radius: 10%;
+}
+.modelos_dunk_low:hover {
+    box-shadow: 3px 2px 3px #0f1b25;
+    transition: 0.3s;
+    transform: translateY(-5px);
+    border: solid 2px #ff922d;
+}
+.modelos_dunk_low:active {
+    box-shadow: none;
+    transition: 0.3s;
+    transform: translateY(0px);
+    border-color:#ff7b00;
+}
+
+.div_imagens_modelo {
+    text-align: center;
+}
+
+
+
 /*media*/
 
 /*Celular*/
