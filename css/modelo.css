@@ -103,18 +103,18 @@ div.preco_link {
     color: aliceblue;
 }
 
-.modelos_dunk_low {
+.modelos {
     margin: 5px 5px 5px 5px;
     width: 70px;
     border-radius: 10%;
 }
-.modelos_dunk_low:hover {
+.modelos:hover {
     box-shadow: 3px 2px 3px #0f1b25;
     transition: 0.3s;
     transform: translateY(-5px);
     border: solid 2px #ff922d;
 }
-.modelos_dunk_low:active {
+.modelos:active {
     box-shadow: none;
     transition: 0.3s;
     transform: translateY(0px);
