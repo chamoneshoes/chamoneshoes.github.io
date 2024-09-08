@@ -44,6 +44,44 @@ nav > a:hover {
     color: #013880;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    margin-bottom: 50px;
+}
+
+/*divisao contatos*/
+#divisao_contatos {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: aliceblue;
+}
+
+#divisao_contatos:hover {
+    transition: 0.4s;
+    box-shadow: 6px 6px 5px #7575756e;
+    transform: translateY(-10px);
+}
+
+.link-contatos {
+    text-decoration: none;
+    color: darkcyan;
+    font-size: 2em;
+}
+.link-contatos:hover {
+    transition: 0.3s;
+    font-size: 2.2em;
+    color: rgb(0, 194, 194);
+}
+
+.imagem_contatos {
+    width: 35px;
+    position: relative;
+    bottom: -7px;
+}
+
+.cada_contato {
+    margin: 20px 0px 20px 0px;
 }
 
 /*media*/
@@ -58,7 +96,7 @@ nav > a:hover {
     header {
         height: 120px;
     }
-    a {
+    nav > a {
         padding: 5px;
         font-size: 1.3em;
     }
@@ -78,7 +116,7 @@ nav > a:hover {
     header {
         height: 130px;
     }
-    a {
+    nav > a {
         padding: 20px;
         font-size: 2em;
     }
@@ -98,7 +136,7 @@ nav > a:hover {
     header {
         height: 120px;
     }
-    a {
+    nav > a {
         padding: 30px;
         font-size: 3em;
     }
@@ -119,7 +157,7 @@ nav > a:hover {
     header {
         height: 160px;
     }
-    a {
+    nav > a {
         padding: 60px;
         font-size: 4.2em;
     }

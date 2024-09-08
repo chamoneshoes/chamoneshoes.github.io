@@ -29,10 +29,10 @@ function mostra_knu() {
 
     if (old_knu.style.display == 'block') {
         old_knu.style.display = 'none'
-        ver_mais_old_knu.innerHTML = 'Ver Mais'
+        ver_mais_knu.innerHTML = 'Ver Mais'
     } else {
         old_knu.style.display = 'block'
-        ver_mais_old_knu.innerHTML = 'Ver Menos'
+        ver_mais_knu.innerHTML = 'Ver Menos'
     }
 }
 
