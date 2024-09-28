@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Squada+One&display=swap');
 
 * {
-    font-family: Squada One;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -24,6 +24,7 @@ nav {
 }
 
 nav > a {
+    font-family: Squada One;
     margin: 0px 10px;
     color: #ffffff;
     border-radius: 10%;
@@ -44,75 +45,106 @@ nav > a:hover {
     color: #013880;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-bottom: 50px;
 }
 
-/*divisao contatos*/
-#divisao_contatos {
+/* quem somos */
+p.quem_somos {
+    width: 300px;
+    margin: 5px auto 10px auto;
+    font-size: 1.1em;
     text-align: center;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    width: 350px;
-    background-color: #ffffff;
-    border-radius: 6px;
+    text-shadow: 0.5px 0px 1px #777777;
 }
 
-#divisao_contatos:hover {
-    transition: 0.4s;
-    box-shadow: 6px 6px 5px #7575756e;
-    transform: translateY(-10px);
+#span_quem_somos {
+    text-decoration: underline;
 }
 
-.link-contatos {
-    text-decoration: none;
-    color: darkcyan;
-    font-size: 2em;
-}
-
-.link-contatos:hover {
-    transition: 0.3s;
-    font-size: 2.2em;
-    color: rgb(0, 194, 194);
-}
-
-#email {
-    font-size: 1.4em;
-}
-
-.imagem_contatos {
-    width: 35px;
-    position: relative;
-    bottom: -7px;
-}
-
-.cada_contato {
-    align-self: flex-start;
-    margin: 20px 0px 20px 20px;
-}
-
-/*footer*/
-footer {
-    display: flex;
+#div_local {
     justify-content: center;
-    align-items: flex-end;
-    margin-top: 40px;
-    width: 100%;
-    height: 170px;
-    background-image: linear-gradient(to bottom, #D9D9D9 5%, rgba(96, 191, 255, 0.507) 75%);
+    display: flex;
 }
 
-#paragrafo_footer {
+#local {
+    font-size: 1.1em;
     text-align: center;
-    color: white;
-    font-size: 1.6em;
-    text-shadow: 2px 2px 1px #3e7f99;
+    text-shadow: 0.5px 0px 1px #777777;
 }
 
-#icone_verificado {
-    width: 27px;
-    margin:0px 0px 22px 12px; 
-    filter: drop-shadow(2px 2px 3px rgba(32, 64, 85, 0.507));
+#imagem_local {
+    margin-right: 7px;
+    position: relative;
+    bottom: -13px;
+    width: 20px;
+    height: 30px;
+}
+
+
+/*como trabalhamos*/
+#como_trabalhamos {
+    text-shadow: 1px 0px 1px #2dc4ff;
+    text-align: center;
+    color: #013880;
+}
+
+#modalidades {
+    display: flex;
+    flex-direction: row;
+}
+
+.modalidade {
+    background-color: white;
+    padding: 10px;
+    margin: 5px auto 20px auto;
+    border: 2px solid rgb(37, 210, 216);
+    border-radius: 10px;
+    width: 165px;
+    height: auto;
+}
+.modalidade:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 2px 4px 3px #8f8f8fdc;
+}
+
+.modalidade > p {
+    text-shadow: 0.5px 0px 1px #777777;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.modalidade > h1 {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+#modalidade_atacado_grade {
+    background-color: white;
+    padding: 10px;
+    border: 2px solid rgb(0, 247, 255);
+    margin: auto;
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+}
+#modalidade_atacado_grade:hover {
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 2px 4px 3px #8f8f8fdc;
+}
+
+#modalidade_atacado_grade > p {
+    text-shadow: 0.5px 0px 1px #777777;
+    margin: 20px;
+    font-weight: bold;
+    text-align: justify;
+    font-size: 0.8em;
+
+}
+
+#modalidade_atacado_grade > h1 {
+        text-align: center;
+        font-size: 1.3em;
 }
 
 /*media*/
@@ -127,7 +159,7 @@ footer {
     header {
         height: 120px;
     }
-    nav > a {
+    a {
         padding: 5px;
         font-size: 1.3em;
     }
@@ -147,7 +179,7 @@ footer {
     header {
         height: 130px;
     }
-    nav > a {
+    a {
         padding: 20px;
         font-size: 2em;
     }
@@ -167,7 +199,7 @@ footer {
     header {
         height: 120px;
     }
-    nav > a {
+    a {
         padding: 30px;
         font-size: 3em;
     }
@@ -188,7 +220,7 @@ footer {
     header {
         height: 160px;
     }
-    nav > a {
+    a {
         padding: 60px;
         font-size: 4.2em;
     }
