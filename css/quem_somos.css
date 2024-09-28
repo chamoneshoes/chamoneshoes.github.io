@@ -81,6 +81,7 @@ p.quem_somos {
 
 
 /*como trabalhamos*/
+
 #como_trabalhamos {
     text-shadow: 1px 0px 1px #2dc4ff;
     text-align: center;
@@ -88,19 +89,22 @@ p.quem_somos {
 }
 
 #modalidades {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    grid-template-rows: auto; /* Filas automáticas */
+    gap: 20px; /* Espacio entre los elementos */
 }
 
 .modalidade {
     background-color: white;
     padding: 10px;
-    margin: 5px auto 20px auto;
+    margin: 10px auto 0px auto;
     border: 2px solid rgb(37, 210, 216);
     border-radius: 10px;
-    width: 165px;
+    width: 75%; /* Ocupa el 100% de la celda */
     height: auto;
 }
+
 .modalidade:hover {
     transition: 0.3s;
     transform: translateY(-10px);
@@ -110,41 +114,17 @@ p.quem_somos {
 .modalidade > p {
     text-shadow: 0.5px 0px 1px #777777;
     text-align: center;
-    font-size: 1.1em;
-}
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
+}
 .modalidade > h1 {
     text-align: center;
     font-size: 1.3em;
 }
 
-#modalidade_atacado_grade {
-    background-color: white;
-    padding: 10px;
-    border: 2px solid rgb(0, 247, 255);
-    margin: auto;
-    border-radius: 10px;
-    width: 300px;
-    height: auto;
-}
-#modalidade_atacado_grade:hover {
-    transition: 0.3s;
-    transform: translateY(-10px);
-    box-shadow: 2px 4px 3px #8f8f8fdc;
-}
-
-#modalidade_atacado_grade > p {
-    text-shadow: 0.5px 0px 1px #777777;
-    margin: 20px;
-    font-weight: bold;
-    text-align: justify;
-    font-size: 0.8em;
-
-}
-
-#modalidade_atacado_grade > h1 {
-        text-align: center;
-        font-size: 1.3em;
+/* Forzar que la tercera div ocupe toda la línea */
+.modalidade:nth-child(3) {
+    grid-column: 1 / -1; /* Ocupa desde la columna 1 hasta la última */
 }
 
 /*media*/
@@ -167,6 +147,15 @@ p.quem_somos {
         font-size: 2.0em;
         text-shadow: 2px 1px 2px #2dc4ff;
     }
+    #como_trabalhamos {
+        font-size: 1.5em;
+    }
+    .modalidade > h1 {
+        font-size: 1.1em;
+    }
+    .modalidade > p {
+        font-size: 1.1em;
+    }
 }
 
 /*Tablet*/
@@ -186,6 +175,15 @@ p.quem_somos {
     #titulo {
         font-size: 2.5em;
         text-shadow: 3px 2px 2px #2dc4ff;
+    }
+    #como_trabalhamos {
+        font-size: 1.7em;
+    }
+    .modalidade > h1 {
+        font-size: 1.2em;
+    }
+    .modalidade > p {
+        font-size: 1.3em;
     }
 }
 
@@ -207,6 +205,15 @@ p.quem_somos {
         font-size: 3.2em;
         text-shadow: 4px 3px 2px #2dc4ff;
     }
+    #como_trabalhamos {
+        font-size: 1.9em;
+    }
+    .modalidade > h1 {
+        font-size: 1.5em;
+    }
+    .modalidade > p {
+        font-size: 1.6em;
+    }
 }
 
 
@@ -227,5 +234,17 @@ p.quem_somos {
     #titulo {
         font-size: 3.5em;
         text-shadow: 4px 3px 2px #2dc4ff;
+    }
+    #como_trabalhamos {
+        font-size: 2.1em;
+    } 
+    .modalidade {
+        margin: 0px auto 0px auto;
+    }
+    .modalidade > h1 {
+        font-size: 1.7em;
+    }
+    .modalidade > p {
+        font-size: 1.9em;
     }
 }
